@@ -7,6 +7,8 @@ port of a [python app](https://github.com/thesteve0/awsdemo) originally created 
 
 You can deploy MapIt on OpenShift using the provided template:
 ```
+oc new-project mapit
+oc new-app https://github.com/stepgrif/mapit-spring.git --strategy=pipeline
 oc new-app -f https://raw.githubusercontent.com/siamaksade/mapit-spring/master/mapit-template.yaml
 ```
 
